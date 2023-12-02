@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+    <title>Rock Paper Scissor</title>
+
+    <style>
+      .button
+      {
+        margin-top: 30px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 10px; 
+        background-color: white;
+      
+      }
+      .button2:hover 
+      {
+        box-shadow: 0 12px 13px 0 rgba(0,0,0,0.24),0 17px 30px 0 rgba(0,0,0,0.19);
+      }
+      .back
+      {
+        text-align: center;
+      }
+      .text
+      {
+        margin-top: 130px;
+        font-size: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font: bold;
+        color: rgb(139, 139, 139);
+      }
+    </style>
+
+  </head>
+
+  <body class="back">
+    <h1 class="text">Rock Paper Scissors</h1>
+    <button class = 'button button2' title="Dwayne" onclick="
+      playerChoice = 0;
+      comChoice = (Math.floor(Math.random() * 3));
+      if(comChoice === 0)
+      {
+        alert('Draw');
+      }
+      else if(comChoice === 1)
+      {
+        alert('You lose, com chose paper');
+      }
+      else if(comChoice === 2)
+      {
+        alert('You won! Com chose scissors');
+      }
+      ">
+
+      <img src="istockphoto-182847780-612x612.jpg"
+      width="400px"
+      height="400px">
+    </button>
+    <button class="button button2"  onclick="
+      playerChoice = 1;
+      comChoice = (Math.floor(Math.random() * 3));
+      if(comChoice === 1)
+      {
+        alert('Draw');
+      }
+      else if(comChoice === 2)
+      {
+        alert('You lose, com chose scissor');
+      }
+      else if(comChoice === 0)
+      {
+        alert('You won! Com chose rock');
+      }
+      ">
+      <img src="13301-1032-4ww_700x700.webp"
+      width="400px"
+      height="400px">
+    </button>
+    <button  class = "button button2" onclick="
+    playerChoice = 2;
+    comChoice = (Math.floor(Math.random() * 3));
+    if(comChoice === 2)
+    {
+      alert('Draw');
+    }
+    else if(comChoice === 0)
+    {
+      alert('You lose, com chose rock');
+    }
+    else if(comChoice === 1)
+    {
+      alert('You won! Com chose paper');
+    }
+    ">
+    <img src="OkLr9a5pSLKEjcNadYgZ_scissos-open.webp"
+    width="400px"
+    height="400px">
+  </button>
+    <script>
+      let comChoice;
+      let playerChoice = 0;
+    </script>
+
+  </body>
+
+</html>

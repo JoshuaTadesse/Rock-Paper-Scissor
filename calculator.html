@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+    <style>
+      .background 
+      {
+        background-color: black;
+        text-align: center;
+
+      }
+
+      .buttons
+      {
+        color: whitesmoke;
+        background-color: orange;
+        border-radius: 15px;
+        font-size: 100px; 
+        height: 120px;
+        width: 120px;
+        font-weight: 20px;
+  
+      }
+
+    </style>
+	
+  </head>
+
+	<body class = 'background'>
+  <p>  
+    <button class = 'buttons' onclick="
+      cartQty += '1';
+      console.log(cartQty);
+      ">
+      1
+    </button>
+
+    <button class = 'buttons' onclick="
+    cartQty += '2';
+    console.log(cartQty);
+    ">
+      2
+    </button>
+
+    <button class = 'buttons' onclick="
+    cartQty += '3';
+    console.log(cartQty);
+    ">
+      3
+    </button>
+  </p>
+  <p>  
+    <button class = 'buttons' onclick="
+      cartQty += '4';
+      console.log(cartQty);
+      ">
+      4
+    </button>
+
+    <button class = 'buttons' onclick="
+    cartQty += '5';
+    console.log(cartQty);
+    ">
+    5
+    </button>
+
+    <button class = 'buttons' onclick="
+    cartQty += '6';
+    console.log(cartQty);
+    ">
+      6
+    </button>
+  </p>
+  <p>  
+    <button class = 'buttons' onclick="
+      cartQty += '7';
+      console.log(cartQty);
+      ">
+      7
+    </button>
+
+    <button class = 'buttons' onclick="
+    cartQty += '8';
+    console.log(cartQty);
+    ">
+      8
+    </button>
+
+    <button class = 'buttons' onclick="
+    cartQty += '9';
+    console.log(cartQty);
+    ">
+      9
+    </button>
+  </p>
+    <button class = 'buttons' onclick="
+    cartQty += ' + ';
+    console.log(cartQty);
+    ">
+      +
+    </button>
+    <button class = 'buttons' onclick="
+    cartQty += '0';
+    console.log(cartQty);
+    ">
+      0
+    </button>
+    <button class = 'buttons' onclick="
+    console.log(eval(cartQty));
+    cartQty = '';
+    ">
+      =
+    </button>
+
+		<script>
+      let cartQty = '';
+    </script>
+	</body>
+
+</html>
